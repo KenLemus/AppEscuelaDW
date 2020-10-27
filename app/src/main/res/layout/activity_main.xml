@@ -67,20 +67,23 @@
               android:layout_margin="12dp"
               >
              <LinearLayout
+                 android:id="@+id/img_alumno"
+                 android:onClick="onClick"
                  android:orientation="vertical"
                  android:padding="16dp"
                  android:gravity="center"
                  android:layout_width="match_parent"
                  android:layout_height="match_parent">
+
                  <ImageView
-                     android:src="@drawable/registro"
+                     android:src="@drawable/estudiantes"
                      android:layout_width="80dp"
                      android:layout_height="80dp" />
                  <TextView
                      android:layout_marginTop="12dp"
                      android:textColor="#6f6f6f"
                      android:textSize="18sp"
-                     android:text="Registro"
+                     android:text="Alumno"
                      android:layout_width="wrap_content"
                      android:layout_height="wrap_content"/>
              </LinearLayout>
@@ -97,13 +100,16 @@
               android:layout_margin="12dp"
               >
               <LinearLayout
+                  android:id="@+id/img_grado"
+                  android:onClick="onClick"
                   android:orientation="vertical"
                   android:padding="16dp"
                   android:gravity="center"
                   android:layout_width="match_parent"
                   android:layout_height="match_parent">
                   <ImageView
-                      android:src="@drawable/estudiantes"
+
+                      android:src="@drawable/cursos"
                       android:layout_width="80dp"
                       android:layout_height="80dp" />
                   <TextView
@@ -127,13 +133,15 @@
               android:layout_margin="12dp"
               >
               <LinearLayout
+                  android:id="@+id/img_inscripcion"
+                  android:onClick="onClick"
                   android:orientation="vertical"
                   android:padding="16dp"
                   android:gravity="center"
                   android:layout_width="match_parent"
                   android:layout_height="match_parent">
                   <ImageView
-                      android:src="@drawable/cursos"
+                      android:src="@drawable/inscripcion"
                       android:layout_width="80dp"
                       android:layout_height="80dp" />
                   <TextView
@@ -157,6 +165,8 @@
               android:layout_margin="12dp"
               >
               <LinearLayout
+                  android:id="@+id/img_mostrar"
+                  android:onClick="onClick"
                   android:orientation="vertical"
                   android:padding="16dp"
                   android:gravity="center"
@@ -170,7 +180,7 @@
                       android:layout_marginTop="12dp"
                       android:textColor="#6f6f6f"
                       android:textSize="18sp"
-                      android:text="Inscripcion"
+                      android:text="Mostrar"
                       android:layout_width="wrap_content"
                       android:layout_height="wrap_content"/>
               </LinearLayout>
@@ -200,7 +210,7 @@
                       android:layout_marginTop="12dp"
                       android:textColor="#6f6f6f"
                       android:textSize="18sp"
-                      android:text="Inscripcion"
+                      android:text="Proximo"
                       android:layout_width="wrap_content"
                       android:layout_height="wrap_content"/>
               </LinearLayout>
@@ -230,7 +240,7 @@
                       android:layout_marginTop="12dp"
                       android:textColor="#6f6f6f"
                       android:textSize="18sp"
-                      android:text="Inscripcion"
+                      android:text="Proximo"
                       android:layout_width="wrap_content"
                       android:layout_height="wrap_content"/>
               </LinearLayout>
