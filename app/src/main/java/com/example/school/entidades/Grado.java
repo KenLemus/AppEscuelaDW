@@ -1,8 +1,9 @@
 package com.example.school.entidades;
 
 
+import java.io.Serializable;
 
-public class Grado{
+public class Grado implements Serializable {
      private    Integer id_grado;
     private      String grado;
 

@@ -9,10 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.School">
-        <activity android:name=".Mostrar"></activity>
+        <activity android:name=".Seccion.AdapterSeccion"></activity>
+        <activity android:name=".Seccion.RecycleView_Seccion" />
+        <activity android:name=".Seccion.Seccion" />
+        <activity android:name=".Grados.AdapterGrado" />
+        <activity android:name=".Grados.RecycleView_Grado" />
+        <activity android:name=".Alumnos.recycle_view_alumno" />
+        <activity android:name=".Alumnos.AdapterAlumno" />
+        <activity android:name=".Mostrar" />
         <activity android:name=".Inscripcion" />
-        <activity android:name=".Grado" />
-        <activity android:name=".Alumnos" />
+        <activity android:name=".Grados.Grado" />
+        <activity android:name=".Alumnos.Alumnos" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

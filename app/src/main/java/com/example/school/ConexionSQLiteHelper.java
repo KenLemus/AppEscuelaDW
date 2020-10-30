@@ -7,7 +7,6 @@ import android.database.sqlite.SQLiteOpenHelper;
 import androidx.annotation.Nullable;
 
 import com.example.school.utilidades.Utilidades;
-import com.example.school.utilidades.UtilidadesGrado;
 
 public class ConexionSQLiteHelper extends SQLiteOpenHelper {
 
@@ -21,13 +20,15 @@ public class ConexionSQLiteHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL(Utilidades.CREAR_TABLA_ALUMNO);
-        db.execSQL(UtilidadesGrado.CREAR_TABLA_GRADO);
+        db.execSQL(Utilidades.CREAR_TABLA_GRADO);
+        db.execSQL(Utilidades.CREAR_TABLA_SECCION);
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int versionAntigua, int versionNueva) {
-        db.execSQL("DROP TABLE IF EXISTS alumno");
-        db.execSQL("DROP TABLE IF EXISTS grados" );
+        db.execSQL("DROP TABLE IF EXISTS "+Utilidades.TABLA_ALUMNO);
+        db.execSQL("DROP TABLE IF EXISTS "+Utilidades.TABLA_GRADO);
+        db.execSQL("DROP TABLE IF EXISTS "+Utilidades.TABLA_SECCION);
         onCreate(db);
 
     }

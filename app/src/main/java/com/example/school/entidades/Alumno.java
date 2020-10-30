@@ -2,7 +2,9 @@ package com.example.school.entidades;
 
 import android.content.Intent;
 
-public class Usuario {
+import java.io.Serializable;
+
+public class Alumno implements Serializable {
     private Integer id_alumno;
     private String nombre;
     private String apellido;
@@ -10,13 +12,16 @@ public class Usuario {
     private String telefono;
     private String edad;
 
-    public Usuario(Integer id_alumno, String nombre, String apellido, String direccion, String telefono, String edad) {
+    public Alumno(Integer id_alumno, String nombre, String apellido, String direccion, String telefono, String edad) {
         this.id_alumno = id_alumno;
         this.nombre = nombre;
         this.apellido = apellido;
         this.direccion = direccion;
         this.telefono = telefono;
         this.edad = edad;
+    }
+
+    public Alumno() {
     }
 
     public Integer getId_alumno() {

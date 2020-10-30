@@ -5,11 +5,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
+
+import com.example.school.Alumnos.Alumnos;
+import com.example.school.Alumnos.recycle_view_alumno;
+import com.example.school.Grados.Grado;
+import com.example.school.Seccion.Seccion;
 
 public class MainActivity extends AppCompatActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
         ConexionSQLiteHelper conn= new ConexionSQLiteHelper(this, "bd_alumnos", null, 1);
 
     }
+
 
         public void onClick(View view){
 
@@ -34,8 +37,10 @@ public class MainActivity extends AppCompatActivity {
                     miIntent= new Intent(MainActivity.this, Inscripcion.class);
                     break;
                 case R.id.img_mostrar:
-                    miIntent= new Intent(MainActivity.this, Mostrar.class);
+                    miIntent= new Intent(MainActivity.this, Seccion.class);
 
             }startActivity(miIntent);
         }
+
+
 }

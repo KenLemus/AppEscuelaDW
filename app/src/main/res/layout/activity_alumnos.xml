@@ -5,7 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Alumnos">
+    android:background="@drawable/fondo2"
+    tools:context=".Alumnos.Alumnos">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -16,57 +17,79 @@
             android:id="@+id/textView4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_marginTop="20dp"
+            android:layout_marginBottom="15dp"
             android:gravity="center"
             android:text="REGISTRO DE ALUMNOS"
+            android:textColor="#FFF"
             android:textSize="24sp"
             android:textStyle="bold" />
 
         <EditText
-            android:hint="Ingrese Nombre"
+            android:id="@+id/edtIdGrado"
+            android:layout_width="167dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="5dp"
+            android:ems="10"
+            android:hint="Identificador"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/btnBuscar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="10dp"
+            android:onClick="Buscar"
+            android:text="Seleccionar" />
+
+        <EditText
             android:id="@+id/edtNombre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
             android:ems="10"
-            android:inputType="textPersonName"
-             />
+            android:hint="Ingrese Nombre"
+
+            android:inputType="textPersonName" />
 
         <EditText
-            android:hint="Ingrese Apellido"
             android:id="@+id/edtApellido"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
             android:ems="10"
-            android:inputType="textPersonName"
-             />
+            android:hint="Ingrese Apellido"
+            android:inputType="textPersonName" />
 
         <EditText
-            android:hint="Ingrese Direccion"
             android:id="@+id/edtDireccion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
             android:ems="10"
-            android:inputType="textPersonName"
-            />
+            android:hint="Ingrese Direccion"
+            android:inputType="textPersonName" />
 
         <EditText
-            android:hint="Ingrese Telefono"
             android:id="@+id/edtTelefono"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
             android:ems="10"
-            android:inputType="textPersonName"
-             />
+            android:hint="Ingrese Telefono"
+            android:inputType="textPersonName" />
 
         <EditText
-            android:hint="Ingrese Edad"
             android:id="@+id/edtEdad"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="15dp"
             android:ems="10"
-            android:inputType="textPersonName"
-           />
+            android:hint="Ingrese Edad"
+            android:inputType="textPersonName" />
 
         <Button
             android:onClick="onClick"
@@ -78,18 +101,22 @@
             android:id="@+id/btnEditar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="Modificar"
             android:text="EDITAR" />
 
         <Button
             android:id="@+id/btnEliminar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="Eliminar"
             android:text="ELIMINAR" />
 
         <Button
-            android:id="@+id/btnMostrar"
+
+            android:id="@+id/btnMostrarAlumno"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="Lista"
             android:text="MOSTRAR" />
 
     </LinearLayout>
