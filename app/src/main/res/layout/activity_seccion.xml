@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondo2"
+    android:padding="32dp"
     tools:context=".Seccion.Seccion">
 
     <LinearLayout
@@ -20,7 +21,7 @@
             android:layout_marginTop="20dp"
             android:layout_marginBottom="20dp"
             android:gravity="center"
-            android:text="REGISTRO DE SECCIONES"
+            android:text="GESTION DE SECCIONES"
             android:textColor="#FFF"
             android:textSize="24sp"
             android:textStyle="bold" />
@@ -29,7 +30,7 @@
             android:layout_width="167dp"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
-            android:layout_marginBottom="5dp"
+
             android:ems="10"
             android:hint="Identificador"
             android:inputType="number" />
@@ -40,9 +41,11 @@
             android:layout_height="wrap_content"
             android:layout_gravity="right"
             android:layout_marginBottom="10dp"
-
+            android:drawableLeft="@drawable/ic_action_buscar"
             android:onClick="Buscar"
-            android:text="Seleccionar" />
+            android:text="Buscar"
+            app:backgroundTint="@color/cardview_shadow_end_color"
+            app:iconTint="@color/white" />
 
         <EditText
             android:id="@+id/edtSeccion"
@@ -57,13 +60,14 @@
             android:onClick="onClick"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            app:backgroundTint="@color/purple_700"
             android:text="AGREGAR" />
 
         <Button
             android:id="@+id/btnEditarSeccion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
+            app:backgroundTint="@color/purple_700"
             android:onClick="Modificar"
             android:text="EDITAR" />
 
@@ -71,7 +75,7 @@
             android:id="@+id/btnEliminarSeccion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
+            app:backgroundTint="@color/purple_700"
             android:onClick="Eliminar"
             android:text="ELIMINAR" />
 
@@ -79,7 +83,7 @@
             android:id="@+id/btnMostrarSeccion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
+            app:backgroundTint="@color/purple_700"
             android:onClick="Lista"
             android:text="MOSTRAR" />
     </LinearLayout>

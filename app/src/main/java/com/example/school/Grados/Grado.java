@@ -7,7 +7,6 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
-import android.os.strictmode.SqliteObjectLeakedViolation;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -26,8 +25,8 @@ public class Grado extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_grado);
 
-        edtIdGrado=(EditText) findViewById(R.id.edtIdGrado) ;
-        edtGrado = (EditText) findViewById(R.id.edtGrado);
+        edtIdGrado=(EditText) findViewById(R.id.txtID_Curso) ;
+        edtGrado = (EditText) findViewById(R.id.txtCurso);
 
         conn= new ConexionSQLiteHelper(getApplicationContext(), Utilidades.DB_NAME, null, Utilidades.DB_VERSION);
     }

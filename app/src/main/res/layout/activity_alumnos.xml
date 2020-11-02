@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="15dp"
     android:background="@drawable/fondo2"
     tools:context=".Alumnos.Alumnos">
 
@@ -18,20 +19,20 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="10dp"
             android:layout_marginBottom="15dp"
             android:gravity="center"
-            android:text="REGISTRO DE ALUMNOS"
+            android:text="GESTION DE ALUMNOS"
             android:textColor="#FFF"
             android:textSize="24sp"
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/edtIdGrado"
-            android:layout_width="167dp"
+            android:id="@+id/txtID_Curso"
+            android:layout_width="141dp"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
-            android:layout_marginBottom="5dp"
+
             android:ems="10"
             android:hint="Identificador"
             android:inputType="number" />
@@ -43,7 +44,9 @@
             android:layout_gravity="right"
             android:layout_marginBottom="10dp"
             android:onClick="Buscar"
-            android:text="Seleccionar" />
+            android:drawableLeft="@drawable/ic_action_buscar"
+            app:backgroundTint="@color/cardview_shadow_end_color"
+            android:text="Buscar" />
 
         <EditText
             android:id="@+id/edtNombre"
@@ -95,6 +98,7 @@
             android:onClick="onClick"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            app:backgroundTint="@color/purple_700"
             android:text="AGREGAR" />
 
         <Button
@@ -102,12 +106,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="Modificar"
+            app:backgroundTint="@color/purple_700"
             android:text="EDITAR" />
 
         <Button
             android:id="@+id/btnEliminar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            app:backgroundTint="@color/purple_700"
             android:onClick="Eliminar"
             android:text="ELIMINAR" />
 
@@ -116,6 +122,7 @@
             android:id="@+id/btnMostrarAlumno"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            app:backgroundTint="@color/purple_700"
             android:onClick="Lista"
             android:text="MOSTRAR" />
 
