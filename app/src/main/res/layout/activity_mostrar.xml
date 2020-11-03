@@ -6,4 +6,23 @@
     android:layout_height="match_parent"
     tools:context=".Mostrar">
 
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ups"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-156dp" />
+
+    <TextView
+        android:id="@+id/textView7"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Estamos trabajando en ello para brindarte la mejor experiencia"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="429dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

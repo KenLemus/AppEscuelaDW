@@ -25,8 +25,8 @@ public class Grado extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_grado);
 
-        edtIdGrado=(EditText) findViewById(R.id.txtID_Curso) ;
-        edtGrado = (EditText) findViewById(R.id.txtCurso);
+        edtIdGrado=(EditText) findViewById(R.id.txtID_Grado) ;
+        edtGrado = (EditText) findViewById(R.id.txtGrado);
 
         conn= new ConexionSQLiteHelper(getApplicationContext(), Utilidades.DB_NAME, null, Utilidades.DB_VERSION);
     }
@@ -75,7 +75,7 @@ public class Grado extends AppCompatActivity {
     //METODO EDITAR//
     public void Editar(View view){
         SQLiteDatabase db=conn.getWritableDatabase();
-        String[] parametros={edtGrado.getText().toString()};
+        String[] parametros={edtIdGrado.getText().toString()};
         ContentValues values=new ContentValues();
         values.put(Utilidades.CAMPO_GRADO, edtGrado.getText().toString());
 

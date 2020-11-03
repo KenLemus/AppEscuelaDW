@@ -27,8 +27,9 @@ import java.util.ArrayList;
 
 public class Inscripcion extends AppCompatActivity {
 
-    EditText et_id_asig_alum;
+    EditText et_id_asig_alum, txtID_ALUMNO, txtID_CURSO, txtID_GRADO, txtID_SECCION;
     Spinner curso, alumno, grado, seccion;
+
 
     ArrayList<String> listaCurso, listaGrado, listaSeccion, listaAlumno;
 
@@ -348,6 +349,7 @@ public class Inscripcion extends AppCompatActivity {
     }
 
     public void Buscar(View view){
+        ConexionSQLiteHelper conn = new ConexionSQLiteHelper(this, "bd_alumnos", null, 1);
         SQLiteDatabase db=conn.getReadableDatabase();
         String[] parametros={et_id_asig_alum.getText().toString()};
         try {
@@ -358,10 +360,10 @@ public class Inscripcion extends AppCompatActivity {
             cursor.moveToFirst();
 
             et_id_asig_alum.setText(cursor.getString(0));
-            alumno.setId(cursor.getInt(1));
-            curso.setId(cursor.getInt(2 ));
-            grado.setId(cursor.getInt(3));
-            seccion.setId(cursor.getInt(4));
+            alumno.setId(cursor.getInt(0));
+            curso.setId(cursor.getInt(1 ));
+            grado.setId(cursor.getInt(2));
+            seccion.setId(cursor.getInt(3));
 
         }catch (Exception e){
             Toast.makeText(getApplicationContext(),"El documento no existe",Toast.LENGTH_LONG).show();

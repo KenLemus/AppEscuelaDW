@@ -9,6 +9,7 @@ import android.view.View;
 import com.example.school.Alumnos.Alumnos;
 import com.example.school.Curso.Curso;
 import com.example.school.Grados.Grado;
+import com.example.school.Mostrar;
 import com.example.school.Inscripcion.Inscripcion;
 import com.example.school.Seccion.Seccion;
 
@@ -39,6 +40,9 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.img_curso:
                     miIntent= new Intent(MainActivity.this, Curso.class);
+                    break;
+                case R.id.img_mostrar:
+                    miIntent= new Intent(MainActivity.this, Mostrar.class);
                     break;
                 case R.id.img_seccion:
                     miIntent= new Intent(MainActivity.this, Seccion.class);

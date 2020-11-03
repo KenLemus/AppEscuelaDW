@@ -28,7 +28,7 @@
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/txtID_Curso"
+            android:id="@+id/txtID_Grado"
             android:layout_width="141dp"
             android:layout_height="wrap_content"
             android:layout_gravity="right"

@@ -25,7 +25,7 @@ public class Alumnos extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_alumnos);
 
-        edtIdAlumno=(EditText) findViewById(R.id.txtID_Curso);
+        edtIdAlumno=(EditText) findViewById(R.id.txtID_Grado);
         edtNombre = (EditText) findViewById(R.id.edtNombre);
         edtApellido = (EditText) findViewById(R.id.edtApellido);
         edtDireccion = (EditText) findViewById(R.id.edtDireccion);

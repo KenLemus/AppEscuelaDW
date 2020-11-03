@@ -44,8 +44,8 @@ public class AdapterCurso extends RecyclerView.Adapter<AdapterCurso.ViewHolderDa
 
         public ViewHolderDatos(@NonNull View itemView) {
             super(itemView);
-            Id_Curso = itemView.findViewById(R.id.txtID_Curso);
-            Curso = itemView.findViewById(R.id.txtCurso);
+            Id_Curso = itemView.findViewById(R.id.txtID_Grado);
+            Curso = itemView.findViewById(R.id.txtGrado);
         }
     }
 
